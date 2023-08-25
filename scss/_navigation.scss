@@ -1,0 +1,80 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+
+  &_header {
+    font-size: 2.5rem;
+    font-family: "Arimo", sans-serif;
+    letter-spacing: 0.5rem;
+    padding-right: 5rem;
+  }
+
+  &_list {
+    list-style: none;
+    font-size: 2rem;
+    min-width: 15vw;
+
+    &_jeans {
+      padding-left: 0;
+      list-style: none;
+      padding-left: 0.5rem;
+      cursor: pointer;
+
+      & a {
+        text-decoration: none;
+        padding: 1rem 0 0 3rem;
+
+        &:hover {
+          background-color: gainsboro;
+        }
+
+        &:visited {
+          color: black;
+        }
+      }
+    }
+  }
+
+  & li:not(:nth-child(3)) {
+    padding: 0.75rem;
+    opacity: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: gainsboro;
+      opacity: 100%;
+    }
+  }
+
+  & li:nth-child(3) {
+    padding: 0.75rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: gainsboro;
+      opacity: 100%;
+    }
+  }
+
+  &_info_list {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    padding-bottom: 6rem;
+    cursor: pointer;
+    font-weight: 100;
+  }
+
+  &_info {
+    padding: 1rem;
+    min-width: 14vw;
+
+    &:hover {
+      background-color: gainsboro;
+      min-width: 14vw;
+    }
+  }
+}

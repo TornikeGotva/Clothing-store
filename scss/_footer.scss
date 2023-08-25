@@ -1,0 +1,149 @@
+.footer {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+
+  &_subscribe {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5rem 0 5rem 1.5rem;
+    gap: 2.5rem;
+
+    &_header {
+      color: #fff;
+      font-size: 3.5rem;
+      margin: 0;
+      letter-spacing: 0.3rem;
+    }
+
+    &_p {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+    &_input {
+      min-width: 67vw;
+      min-height: 5vh;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+
+    &_button {
+      padding: 1rem 2.5rem 1rem 2.5rem;
+      border: none;
+      font-size: 1.5rem;
+      background-color: #f44336;
+      color: #fff;
+      font-family: inherit;
+      letter-spacing: 0.1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: grey;
+      }
+    }
+  }
+
+  &_info {
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &_contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      row-gap: 2rem;
+      padding-left: 2rem;
+
+      &_header {
+        margin: 0;
+        padding-left: 10rem;
+        font-size: 2rem;
+      }
+
+      &_p {
+        margin: 0;
+        font-size: 1.5rem;
+        padding-left: 7rem;
+      }
+
+      &_message {
+        min-width: 22vw;
+        min-height: 5vh;
+      }
+
+      &_button {
+        min-height: 5vh;
+        min-width: 22.6vw;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+          background-color: grey;
+          color: #000;
+        }
+      }
+    }
+
+    &_about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding-top: 2rem;
+        padding-left: 0;
+        margin: 0;
+
+        & a {
+          color: #000;
+          font-size: 1.5rem;
+        }
+      }
+
+      &_header {
+        font-size: 2rem;
+        margin: 0;
+      }
+    }
+
+    &_store {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding: 2rem;
+      gap: 2.5rem;
+      & p {
+        font-size: 1.25rem;
+        margin: 0;
+
+        & svg {
+          padding-right: 0.5rem;
+        }
+      }
+
+      &_header {
+        font-size: 2rem;
+        margin: 0;
+      }
+
+      &_box svg:hover {
+        opacity: 20%;
+      }
+    }
+  }
+}

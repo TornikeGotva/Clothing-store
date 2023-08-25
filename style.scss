@@ -1,0 +1,26 @@
+@import "scss/components";
+@import "scss/footer";
+@import "scss/grid";
+@import "scss/main";
+@import "scss/media";
+@import "scss/navigation";
+
+*,
+::after::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 2rem;
+}

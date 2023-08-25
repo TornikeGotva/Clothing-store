@@ -1,0 +1,89 @@
+.span {
+  display: block;
+  font-size: 1.5rem;
+  color: grey;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.new {
+  text-transform: capitalize;
+  position: absolute;
+  background-color: black;
+  z-index: 99999;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.jeans_hidden {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  min-width: 50vw;
+  padding: 5rem;
+  left: 25%;
+  top: 20%;
+  z-index: 9999999;
+
+  &_header {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+  &_p {
+    font-size: 1.5rem;
+  }
+
+  &_input {
+    min-width: 50vw;
+    min-height: 5vh;
+    margin-bottom: 2rem;
+  }
+
+  &_icon {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    padding: 1.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: gainsboro;
+    }
+  }
+
+  &_hidden {
+    display: none;
+  }
+}
+
+.overlay {
+  margin: 0;
+  background-color: black;
+  transform: scaleX(6.59) scaleY(11);
+  z-index: 999999;
+  opacity: 0.9;
+
+  &_hidden {
+    display: none;
+  }
+}
+
+.bar {
+  font-size: 4rem;
+  position: fixed;
+  left: 60%;
+  cursor: pointer;
+  padding: 1rem;
+
+  &:hover {
+    background-color: gainsboro;
+  }
+}
